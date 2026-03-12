@@ -1,0 +1,5 @@
+framework module mpg123 {
+    header "fmt123.h"
+    header "mpg123.h"
+    export *
+}
