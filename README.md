@@ -1,5 +1,8 @@
 # spfk-lame
 
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fryanfrancesconi%2Fspfk-lame%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/ryanfrancesconi/spfk-lame)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fryanfrancesconi%2Fspfk-lame%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/ryanfrancesconi/spfk-lame)
+
 Pre-built xcframeworks for [LAME](https://lame.sourceforge.io) and [mpg123](https://www.mpg123.de), packaged as a Swift package for macOS.
 
 ## Libraries
