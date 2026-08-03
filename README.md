@@ -1,6 +1,5 @@
 # spfk-lame
 
-[![CI](https://img.shields.io/github/actions/workflow/status/ryanfrancesconi/spfk-lame/ci.yml?branch=main)](https://github.com/ryanfrancesconi/spfk-lame/actions/workflows/ci.yml)
 [![Version](https://img.shields.io/github/v/tag/ryanfrancesconi/spfk-lame)](https://github.com/ryanfrancesconi/spfk-lame/tags)
 [![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fryanfrancesconi%2Fspfk-lame%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/ryanfrancesconi/spfk-lame)
 [![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fryanfrancesconi%2Fspfk-lame%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/ryanfrancesconi/spfk-lame)
