@@ -8,10 +8,16 @@ Pre-built xcframeworks for [LAME](https://lame.sourceforge.io) and [mpg123](http
 
 ## Libraries
 
-| Library | Purpose |
-|---------|---------|
-| **lame** | MP3 encoding (CBR/VBR) |
-| **mpg123** | MP3 decoding |
+| Library | Purpose | Version | License |
+|---------|---------|---------|---------|
+| **lame** | MP3 encoding (CBR/VBR) | 3.100.1 | LGPL v2 (Library GPL) |
+| **mpg123** | MP3 decoding | API 49 (1.32 series) | LGPL v2.1 (Lesser GPL) |
+
+> **The root `LICENSE` (MIT) covers this packaging only — not the libraries themselves.** Both
+> frameworks are LGPL, built as dynamically linked shared libraries so a user can replace them, and
+> both require attribution in embedding applications. See
+> [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md) for the full terms, the exact wording mpg123 asks
+> to see in About boxes, and why the dynamic linking is load-bearing.
 
 ## Usage
 
