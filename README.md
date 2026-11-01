@@ -4,38 +4,21 @@
 [![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fryanfrancesconi%2Fspfk-lame%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/ryanfrancesconi/spfk-lame)
 [![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fryanfrancesconi%2Fspfk-lame%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/ryanfrancesconi/spfk-lame)
 
-Pre-built xcframeworks for [LAME](https://lame.sourceforge.io) and [mpg123](https://www.mpg123.de), packaged as a Swift package for macOS.
+Vendored third-party code: prebuilt [LAME](https://lame.sourceforge.io) and
+[mpg123](https://www.mpg123.de) libraries, repackaged as xcframeworks for Swift Package Manager on
+macOS.
 
-## Libraries
+spfk-audio-conversion links both and uses LAME to encode MP3. mpg123 is linked but never called.
+Nothing else in the workspace depends on this package.
 
-| Library | Purpose | Version | License |
-|---------|---------|---------|---------|
-| **lame** | MP3 encoding (CBR/VBR) | 3.100.1 | LGPL v2 (Library GPL) |
-| **mpg123** | MP3 decoding | API 49 (1.32 series) | LGPL v2.1 (Lesser GPL) |
+## License
 
-> **The root `LICENSE` (MIT) covers this packaging only — not the libraries themselves.** Both
-> frameworks are LGPL, built as dynamically linked shared libraries so a user can replace them, and
-> both require attribution in embedding applications. See
-> [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md) for the full terms, the exact wording mpg123 asks
-> to see in About boxes, and why the dynamic linking is load-bearing.
-
-## Usage
-
-Used by [spfk-audio-conversion](https://github.com/ryanfrancesconi/spfk-audio-conversion) as a dependency of the `SPFKAudioConverterC` target, which wraps LAME and mpg123 in an ObjC interface (`LameConverter`) for MP3 encoding and decoding. This replaces the previous SoX-based MP3 pipeline, enabling true concurrent batch conversion without actor serialization.
-
-```swift
-// In Package.swift
-.package(url: "https://github.com/ryanfrancesconi/spfk-lame", from: "0.0.1"),
-
-// In target dependencies
-.product(name: "lame", package: "spfk-lame"),
-.product(name: "mpg123", package: "spfk-lame"),
-```
-
-## Requirements
-
-- **Platforms:** macOS 13+ (arm64, x86_64)
-- **Swift:** 6.2+
+The MIT `LICENSE` at the root covers the packaging only. LAME is under the GNU Library General
+Public License v2 and mpg123 under the GNU Lesser General Public License v2.1, two different
+licenses. Both are built as dynamically linked frameworks so a user can replace them, which is how
+the LGPL's relinking condition is met. Keep them dynamic, and credit both in the embedding app.
+[THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md) has the full terms and the attribution wording
+mpg123 asks for.
 
 ## About
 
